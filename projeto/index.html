@@ -1,21 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROJETO MARKET PLACE</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetLinka</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        
-    </body>
-    </html>
+  <header class="navbar fll">
+    <div class="logo"><img src="img/image 39.png" alt="Logo da petLinka com um gato e um cachorro desenhados"></div>
+    
+    <div>
+        <div class="search-container">
+            <div id="divBusca">
+                <img src="img/Vector (3).svg" alt="Buscar..." class="icone-busca"/>
+                <input type="text" id="txtBusca" placeholder="O que você está procurando?"/>  
+            </div>  
+        </div>
+
+        <nav>
+            <ul class="nav flex">
+                <li><a href="">Home</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="">Para seu Pet</a></li>
+                <li><a href="">Planos e Pacotes</a></li>
+                <li><a href="">Minhas Reservas</a></li>
+                <li><a href="">Cadastre seus Serviços</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="icons flex">
+        <div class="icon carrinho"><a href=""><img src="img/carrinho.svg" alt=""></a></div>
+        <div class="icon ajuda"><a href=""><img src="img/help.svg" alt=""></a></div>
+        <div class="icon perfil"><a href=""><img src="img/profile.svg" alt=""></a></div>
+    </div>
+  </header>
+
+<main>
+    <div class="carousel-container">
+  <button class="arrow left">&#10094;</button>
+  <div class="carousel-track">
+    <div class="slide"> 
+      <img src="img1.jpg" alt="Promoção 1">
+    </div>
+    <div class="slide">
+      <img src="img2.jpg" alt="Promoção 2">
+    </div>
+    <div class="slide">
+      <img src="img3.jpg" alt="Promoção 3">
+    </div>
+
+  </div>
+  <button class="arrow right">&#10095;</button>
+
+  <div class="carousel-dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</div>
+</main>
+
+<script>
+  const track = document.querySelector('.carousel-track');
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  const nextBtn = document.querySelector('.arrow.right');
+  const prevBtn = document.querySelector('.arrow.left');
+  const dots = document.querySelectorAll('.dot');
+
+  let currentIndex = 0;
+
+  function updateCarousel() {
+    const slideWidth = slides[0].clientWidth;
+    track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[currentIndex].classList.add('active');
+  }
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateCarousel();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateCarousel();
+  });
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      currentIndex = index;
+      updateCarousel();
+    });
+  });
+
+  window.addEventListener('load', updateCarousel);
+</script>
+
+
 </body>
 </html>
