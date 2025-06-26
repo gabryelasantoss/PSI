@@ -36,68 +36,88 @@
     </div>
   </header>
 
-<main>
-    <div class="carousel-container">
-  <button class="arrow left">&#10094;</button>
-  <div class="carousel-track">
-    <div class="slide"> 
-      <img src="img1.jpg" alt="Promoção 1">
-    </div>
-    <div class="slide">
-      <img src="img2.jpg" alt="Promoção 2">
-    </div>
-    <div class="slide">
-      <img src="img3.jpg" alt="Promoção 3">
+  <main>
+    <div class="promocao">
+      <img src="img/Frame 18.png" alt="">
     </div>
 
-  </div>
-  <button class="arrow right">&#10095;</button>
+    <div class="recomendados">
+      <h1>Serviços Recomendados</h1>
+      <div class="carousel">
+        <span class="arrow" id="prev">&#10094;</span>
+        <div class="card" data-index="0">
+        <h2>Clínica Pet Vida Animal</h2>
+        <p><strong>Consulta Veterinária e Vacinação</strong></p>
+        <p class="stars">4,9 (231 avaliações)</p>
+        <p>Lagoa Nova, Natal - RN</p>
+        <div class="buttons">
+          <a href="#">SAIBA MAIS</a>
+          <a href="#">CONTRATAR</a>
+        </div>
+      </div>
 
-  <div class="carousel-dots">
-    <span class="dot active"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>
-</div>
-</main>
+      <div class="card" data-index="1">
+        <h2>Banho & Tosa Pata Cheirosa</h2>
+        <p><strong>Banho, Tosa e Spa pet</strong></p>
+        <p class="stars">4,9 (231 avaliações)</p>
+        <p>Lagoa Nova, Natal- RN</p>
+        <div class="buttons">
+          <a href="#">SAIBA MAIS</a>
+          <a href="#">CONTRATAR</a>
+        </div>
+      </div>
 
-<script>
-  const track = document.querySelector('.carousel-track');
-  const slides = Array.from(document.querySelectorAll('.slide'));
-  const nextBtn = document.querySelector('.arrow.right');
-  const prevBtn = document.querySelector('.arrow.left');
-  const dots = document.querySelectorAll('.dot');
+      <div class="card" data-index="2">
+        <h2>Creche Pet Feliz</h2>
+        <p><strong>Creche e Hotelzinho para cães</strong></p>
+        <p class="stars">4,7 (153 avaliações)</p>
+        <p>Ponta Negra, Natal - RN</p>
+        <div class="buttons">
+          <a href="#">SAIBA MAIS</a>
+          <a href="#">CONTRATAR</a>
+        </div>
+      </div>
+      <span class="arrow" id="next">&#10095;</span>
+    </div>
 
-  let currentIndex = 0;
+    </div>
+  </main>
 
-  function updateCarousel() {
-    const slideWidth = slides[0].clientWidth;
-    track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  <script>
+    const cards = document.querySelectorAll('.card');
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+    let current = 1;
 
-    dots.forEach(dot => dot.classList.remove('active'));
-    dots[currentIndex].classList.add('active');
-  }
+    function updateCards() {
+      cards.forEach((card, index) => {
+        card.classList.remove('active');
+        if (index === current) {
+          card.classList.add('active');
+        }
+      });
+      prev.classList.toggle('disabled', current === 0);
+      next.classList.toggle('disabled', current === cards.length - 1);
+    }
 
-  nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % slides.length;
-    updateCarousel();
-  });
-
-  prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    updateCarousel();
-  });
-
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      currentIndex = index;
-      updateCarousel();
+    prev.addEventListener('click', () => {
+      if (current > 0) {
+        current--;
+        updateCards();
+      }
     });
-  });
 
-  window.addEventListener('load', updateCarousel);
-</script>
+    next.addEventListener('click', () => {
+      if (current < cards.length - 1) {
+        current++;
+        updateCards();
+      }
+    });
 
+    updateCards();
+  </script>
 
 </body>
 </html>
+
+
