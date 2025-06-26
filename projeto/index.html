@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navbar fll">
+  <header class="navbar flex">
     <div class="logo"><img src="img/image 39.png" alt="Logo da petLinka com um gato e um cachorro desenhados"></div>
     
     <div>
@@ -32,7 +32,7 @@
     <div class="icons flex">
         <div class="icon carrinho"><a href=""><img src="img/carrinho.svg" alt=""></a></div>
         <div class="icon ajuda"><a href=""><img src="img/help.svg" alt=""></a></div>
-        <div class="icon perfil"><a href=""><img src="img/profile.svg" alt=""></a></div>
+        <div class="icon perfil"><a href="login.html"><img src="img/profile.svg" alt=""></a></div>
     </div>
   </header>
 
@@ -41,47 +41,189 @@
       <img src="img/Frame 18.png" alt="">
     </div>
 
-    <div class="recomendados">
-      <h1>Serviços Recomendados</h1>
-      <div class="carousel">
+    <section class="recomendados">
+      <h1 class="title">Serviços Recomendados</h1>
+      <div class="carousel flex">
         <span class="arrow" id="prev">&#10094;</span>
+
         <div class="card" data-index="0">
-        <h2>Clínica Pet Vida Animal</h2>
-        <p><strong>Consulta Veterinária e Vacinação</strong></p>
-        <p class="stars">4,9 (231 avaliações)</p>
-        <p>Lagoa Nova, Natal - RN</p>
-        <div class="buttons">
-          <a href="#">SAIBA MAIS</a>
-          <a href="#">CONTRATAR</a>
+          <h2>Clínica Pet Vida Animal</h2>
+          <p><strong>Consulta Veterinária e Vacinação</strong></p>
+          <p class="stars">4,9 (231 avaliações)</p>
+          <p>Lagoa Nova, Natal - RN</p>
+          <div class="buttons flex">
+            <a href="#">SAIBA MAIS</a>
+            <a href="#">CONTRATAR</a>
+          </div>
         </div>
-      </div>
 
-      <div class="card" data-index="1">
-        <h2>Banho & Tosa Pata Cheirosa</h2>
-        <p><strong>Banho, Tosa e Spa pet</strong></p>
-        <p class="stars">4,9 (231 avaliações)</p>
-        <p>Lagoa Nova, Natal- RN</p>
-        <div class="buttons">
-          <a href="#">SAIBA MAIS</a>
-          <a href="#">CONTRATAR</a>
+        <div class="card" data-index="1">
+          <h2>Banho & Tosa Pata Cheirosa</h2>
+          <p><strong>Banho, Tosa e Spa pet</strong></p>
+          <p class="stars">4,9 (231 avaliações)</p>
+          <p>Lagoa Nova, Natal- RN</p>
+          <div class="buttons flex">
+            <a href="#">SAIBA MAIS</a>
+            <a href="#">CONTRATAR</a>
+          </div>
         </div>
-      </div>
 
-      <div class="card" data-index="2">
-        <h2>Creche Pet Feliz</h2>
-        <p><strong>Creche e Hotelzinho para cães</strong></p>
-        <p class="stars">4,7 (153 avaliações)</p>
-        <p>Ponta Negra, Natal - RN</p>
-        <div class="buttons">
-          <a href="#">SAIBA MAIS</a>
-          <a href="#">CONTRATAR</a>
+        <div class="card" data-index="2">
+          <h2>Creche Pet Feliz</h2>
+          <p><strong>Creche e Hotelzinho para cães</strong></p>
+          <p class="stars">4,7 (153 avaliações)</p>
+          <p>Ponta Negra, Natal - RN</p>
+          <div class="buttons flex">
+            <a href="#">SAIBA MAIS</a>
+            <a href="#">CONTRATAR</a>
+          </div>
         </div>
+
+        <span class="arrow" id="next">&#10095;</span> 
+      </div> 
+    </section>
+
+
+    <section class="servicos-section">
+  <h2>HIGIENE E SAÚDE</h2>
+  <div class="grid-servicos">
+    <div class="card-servico">
+      <img src="img/banho.png" alt="">
+      <h3>BANHO E TOSA</h3>
+      <p>Deixe seu pet cheiroso, limpo e pronto para muitos carinhos</p>
+      <div class="buttons">
+        <a href="#">SAIBA MAIS</a>
+        <a href="#">CONTRATAR</a>
       </div>
-      <span class="arrow" id="next">&#10095;</span>
     </div>
 
+    <div class="card-servico">
+      <img src="img/fisio.png" alt="">
+      <h3>SESSÃO DE FISIOTERAPIA</h3>
+      <p>Movimentos mais leves e saudáveis com apoio profissional</p>
+      <div class="buttons">
+        <a href="#">SAIBA MAIS</a>
+        <a href="#">CONTRATAR</a>
+      </div>
     </div>
+
+    <div class="card-servico">
+      <img src="img/acupuntura.png" alt="">
+      <h3>SESSÃO DE ACUPUNTURA</h3>
+      <p>Equilíbrio e alívio natural para o corpo e mente do seu pet</p>
+      <div class="buttons">
+        <a href="#">SAIBA MAIS</a>
+        <a href="#">CONTRATAR</a>
+      </div>
+    </div>
+
+    <div class="card-servico">
+      <img src="img/dente.png" alt="">
+      <h3>ESCOVAÇÃO DE DENTES</h3>
+      <p>Deixe seu pet cheiroso, limpo e pronto para muitos carinhos</p>
+      <div class="buttons">
+        <a href="#">SAIBA MAIS</a>
+        <a href="#">CONTRATAR</a>
+      </div>
+    </div>
+  </div>
+
+  <h2>SERVIÇOS DE CUIDADORES</h2>
+  <div class="grid-servicos">
+    <div class="card-servico">
+      <img src="img/hospedagem.png" alt="">
+      <h3>HOSPEDAGEM DOMICILIAR</h3>
+      <p>Seu pet hospedado com conforto em um lar cheio de cuidados</p>
+      <div class="buttons">
+        <a href="#">SAIBA MAIS</a>
+        <a href="#">CONTRATAR</a>
+      </div>
+    </div>
+
+    <div class="card-servico">
+      <img src="img/creche.png" alt="">
+      <h3>CRECHE</h3>
+      <p>Um dia inteiro de brincadeiras, segurança e atenção especial</p>
+      <div class="buttons">
+        <a href="#">SAIBA MAIS</a>
+        <a href="#">CONTRATAR</a>
+      </div>
+    </div>
+
+    <div class="card-servico">
+      <img src="img/sitter.png" alt="">
+      <h3>PET SITTER</h3>
+      <p>Cuidado personalizado na sua casa com muito carinho e atenção</p>
+      <div class="buttons">
+        <a href="#">SAIBA MAIS</a>
+        <a href="#">CONTRATAR</a>
+      </div>
+    </div>
+
+    <div class="card-servico">
+      <img src="img/poscirurgico.png" alt="">
+      <h3>CUIDADOR PÓS-CIRÚRGICO</h3>
+      <p>Cuidados especiais para seu pet se recuperar com conforto e segurança</p>
+      <div class="buttons">
+        <a href="#">SAIBA MAIS</a>
+        <a href="#">CONTRATAR</a>
+      </div>
+    </div>
+  </div>
+
+  <h2>COMPORTAMENTO E TREINAMENTO</h2>
+  <div class="grid-servicos">
+    <div class="card-servico"><img src="img/cao.png"><h3>ADESTRAMENTO BÁSICO</h3><p>Ensina comandos e boas maneiras</p><div class="buttons"><a href="#">SAIBA MAIS</a><a href="#">CONTRATAR</a></div></div>
+    <div class="card-servico"><img src="img/cao.png"><h3>TREINAMENTO AVANÇADO</h3><p>Treinamento intensivo para pets experientes</p><div class="buttons"><a href="#">SAIBA MAIS</a><a href="#">CONTRATAR</a></div></div>
+    <div class="card-servico"><img src="img/cao.png"><h3>TREINAMENTO EM CASA</h3><p>Sessões no ambiente onde o pet vive, com mais efetividade</p><div class="buttons"><a href="#">SAIBA MAIS</a><a href="#">CONTRATAR</a></div></div>
+    <div class="card-servico"><img src="img/cao.png"><h3>PSICOLOGIA ANIMAL</h3><p>Ajude seu pet a interagir com confiança</p><div class="buttons"><a href="#">SAIBA MAIS</a><a href="#">CONTRATAR</a></div></div>
+  </div>
+
+  <h2>MOBILIDADE E TRANSPORTE</h2>
+  <div class="grid-servicos">
+    <div class="card-servico"><img src="img/cao.png"><h3>TRANSPORTE PET PARA CONSULTAS</h3><p>Leve seu pet ao veterinário com segurança</p><div class="buttons"><a href="#">SAIBA MAIS</a><a href="#">CONTRATAR</a></div></div>
+    <div class="card-servico"><img src="img/cao.png"><h3>TÁXI PET</h3><p>Transporte confiável para qualquer serviço</p><div class="buttons"><a href="#">SAIBA MAIS</a><a href="#">CONTRATAR</a></div></div>
+    <div class="card-servico"><img src="img/cao.png"><h3>TRANSPORTE PARA VIAGENS</h3><p>Ideal para longas distâncias com conforto e segurança</p><div class="buttons"><a href="#">SAIBA MAIS</a><a href="#">CONTRATAR</a></div></div>
+    <div class="card-servico"><img src="img/cao.png"><h3>ENTREGA DE REMÉDIOS E RAÇÕES</h3><p>Itens essenciais entregues direto na sua porta.</p><div class="buttons"><a href="#">SAIBA MAIS</a><a href="#">CONTRATAR</a></div></div>
+  </div>
+</section>
   </main>
+
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="img/image 39.png" alt="Logo PetLinka">
+      <div class="social-icons">
+        <img src="img/facebook.svg" alt="Facebook">
+        <img src="img/instagram.svg" alt="Instagram">
+        <img src="img/youtube.svg" alt="YouTube">
+        <img src="img/x.svg" alt="Twitter/X">
+        <img src="img/tiktok.svg" alt="TikTok">
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h4>Políticas</h4>
+      <p>Termos e condição de uso</p>
+      <p>Privacidade</p>
+      <p>Cookies</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>A empresa</h4>
+      <p>Conheça a PetLinka</p>
+      <p>Suporte ao cliente</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contato e localização</h4>
+      <p>Telefone</p>
+      <p>Email</p>
+      <p>Endereço</p>
+    </div>
+  </div>
+</footer>
+
 
   <script>
     const cards = document.querySelectorAll('.card');
