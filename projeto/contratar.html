@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contratar</title>
+    <link rel="stylesheet" href="contratar.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar flex">
+    <div class="logo"><img src="img/image 39.png" alt="Logo da petLinka com um gato e um cachorro desenhados"></div>
+    
+    <div>
+        <div class="search-container">
+            <div id="divBusca">
+                <img src="img/Vector (3).svg" alt="Buscar..." class="icone-busca"/>
+                <input type="text" id="txtBusca" placeholder="O que você está procurando?"/>  
+            </div>  
+        </div>
+
+        <nav>
+            <ul class="nav flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="">Para seu Pet</a></li>
+                <li><a href="">Planos e Pacotes</a></li>
+                <li><a href="">Minhas Reservas</a></li>
+                <li><a href="">Cadastre seus Serviços</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="icons flex">
+        <div class="icon carrinho"><a href=""><img src="img/carrinho.svg" alt=""></a></div>
+        <div class="icon ajuda"><a href=""><img src="img/help.svg" alt=""></a></div>
+        <div class="icon perfil"><a href="login.html"><img src="img/profile.svg" alt=""></a></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="filtros-container flex">
+        <div class="filtro flex">
+            <label for="servico">Serviço</label>
+            <select id="servico">
+                <option>Banho e tosa</option>
+                <option>Sessão de fisioterapia</option>
+                <option>Sessão de acunputura</option>
+                <option>escovação de dentes</option>
+            </select>
+        </div>
+
+    <div class="filtro flex">
+      <label for="endereco">Endereço</label>
+      <input type="text" id="endereco" placeholder="Tirol, Natal - RN" />
+    </div>
+
+    <button class="btn-filtro" onclick="abrirModal()">FILTROS</button>
+  </div>
+
+  <div class="cards-container-contratar">
+    <div class="card-contratar">
+      <h3>Pet Glamour</h3>
+      <p>Tirol, Natal - RN</p>
+      <p class="preço"><strong>Banho:</strong> R$ 50,00</p>
+      <p class="preço"><strong>Tosa:</strong> R$ 40,00</p>
+      <p>Tempo médio: 1h</p>
+      <p>Avaliação: ★★★★☆ (4.5)</p>
+      <div class="buttons flex">
+        <a href="#">SAIBA MAIS</a>
+        <a href="#">CONTRATAR</a>
+      </div>
+    </div>
+
+    <div class="card-contratar">
+      <h3>Cão Feliz</h3>
+      <p>Lagoa Nova, Natal - RN</p>
+      <p class="preço"><strong>Banho:</strong> R$ 45,00</p>
+      <p class="preço"><strong>Tosa:</strong> R$ 35,00</p>
+      <p>Tempo médio: 45min</p>
+      <p>Avaliação: ★★★★★ (5.0)</p>
+      <div class="buttons flex">
+            <a href="#">SAIBA MAIS</a>
+            <a href="#">CONTRATAR</a>
+       </div>
+    </div>
+
+    <div class="card-contratar">
+      <h3>Mundo Animal Pet</h3>
+      <p>Petrópolis, Natal - RN</p>
+      <p class="preço"><strong>Banho:</strong> R$ 55,00</p>
+      <p class="preço"><strong>Tosa:</strong> R$ 42,00</p>
+      <p>Tempo médio: 1h10</p>
+      <p>Avaliação: ★★★★☆ (4.3)</p>
+        <div class="buttons flex">
+            <a href="#">SAIBA MAIS</a>
+            <a href="#">CONTRATAR</a>
+        </div>
+    </div>
+
+    <div class="card-contratar">
+      <h3>Pet Glamour</h3>
+      <p>Tirol, Natal - RN</p>
+      <p class="preço"><strong>Banho:</strong> R$ 50,00</p>
+      <p class="preço"><strong>Tosa:</strong> R$ 40,00</p>
+      <p>Tempo médio: 1h</p>
+      <p>Avaliação: ★★★★☆ (4.5)</p>
+      <div class="buttons flex">
+        <a href="#">SAIBA MAIS</a>
+        <a href="#">CONTRATAR</a>
+      </div>
+    </div>
+
+    <div class="card-contratar">
+      <h3>Pet Glamour</h3>
+      <p>Tirol, Natal - RN</p>
+      <p class="preço"><strong>Banho:</strong> R$ 50,00</p>
+      <p class="preço"><strong>Tosa:</strong> R$ 40,00</p>
+      <p>Tempo médio: 1h</p>
+      <p>Avaliação: ★★★★☆ (4.5)</p>
+      <div class="buttons flex">
+        <a href="#">SAIBA MAIS</a>
+        <a href="#">CONTRATAR</a>
+      </div>
+    </div>
+
+    <div class="card-contratar">
+      <h3>Pet Glamour</h3>
+      <p>Tirol, Natal - RN</p>
+      <p class="preço"><strong>Banho:</strong> R$ 50,00</p>
+      <p class="preço"><strong>Tosa:</strong> R$ 40,00</p>
+      <p>Tempo médio: 1h</p>
+      <p>Avaliação: ★★★★☆ (4.5)</p>
+      <div class="buttons flex">
+        <a href="#">SAIBA MAIS</a>
+        <a href="#">CONTRATAR</a>
+      </div>
+    </div>
+
+    <div class="card-contratar">
+      <h3>Pet Glamour</h3>
+      <p>Tirol, Natal - RN</p>
+      <p class="preço"><strong>Banho:</strong> R$ 50,00</p>
+      <p class="preço"><strong>Tosa:</strong> R$ 40,00</p>
+      <p>Tempo médio: 1h</p>
+      <p>Avaliação: ★★★★☆ (4.5)</p>
+      <div class="buttons flex">
+        <a href="#">SAIBA MAIS</a>
+        <a href="#">CONTRATAR</a>
+      </div>
+    </div>
+
+    <div class="card-contratar">
+      <h3>Pet Glamour</h3>
+      <p>Tirol, Natal - RN</p>
+      <p class="preço"><strong>Banho:</strong> R$ 50,00</p>
+      <p class="preço"><strong>Tosa:</strong> R$ 40,00</p>
+      <p>Tempo médio: 1h</p>
+      <p>Avaliação: ★★★★☆ (4.5)</p>
+      <div class="buttons flex">
+        <a href="#">SAIBA MAIS</a>
+        <a href="#">CONTRATAR</a>
+      </div>
+    </div>
+
+    <div class="card-contratar">
+      <h3>Pet Glamour</h3>
+      <p>Tirol, Natal - RN</p>
+      <p class="preço"><strong>Banho:</strong> R$ 50,00</p>
+      <p class="preço"><strong>Tosa:</strong> R$ 40,00</p>
+      <p>Tempo médio: 1h</p>
+      <p>Avaliação: ★★★★☆ (4.5)</p>
+      <div class="buttons flex">
+        <a href="#">SAIBA MAIS</a>
+        <a href="#">CONTRATAR</a>
+      </div>
+    </div>
+
+    <div class="card-contratar">
+      <h3>Pet Glamour</h3>
+      <p>Tirol, Natal - RN</p>
+      <p class="preço"><strong>Banho:</strong> R$ 50,00</p>
+      <p class="preço"><strong>Tosa:</strong> R$ 40,00</p>
+      <p>Tempo médio: 1h</p>
+      <p>Avaliação: ★★★★☆ (4.5)</p>
+      <div class="buttons flex">
+        <a href="#">SAIBA MAIS</a>
+        <a href="#">CONTRATAR</a>
+      </div>
+    </div>
+
+    <div class="card-contratar">
+      <h3>Pet Glamour</h3>
+      <p>Tirol, Natal - RN</p>
+      <p class="preço"><strong>Banho:</strong> R$ 50,00</p>
+      <p class="preço"><strong>Tosa:</strong> R$ 40,00</p>
+      <p>Tempo médio: 1h</p>
+      <p>Avaliação: ★★★★☆ (4.5)</p>
+      <div class="buttons flex">
+        <a href="#">SAIBA MAIS</a>
+        <a href="#">CONTRATAR</a>
+      </div>
+    </div>
+  </div>
+  </main>
+
+ <div id="modal-filtros" class="modal">
+  <div class="modal-conteudo">
+    <span class="fechar" onclick="fecharModal()">&times;</span>
+    <h2>Filtros</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Serviço</th>
+          <th>Preço Máx (R$)</th>
+          <th>Tempo Máx (min)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Banho</td>
+          <td><input type="number" min="0" placeholder="Ex: 50"></td>
+          <td><input type="number" min="0" placeholder="Ex: 60"></td>
+        </tr>
+        <tr>
+          <td>Tosa</td>
+          <td><input type="number" min="0" placeholder="Ex: 40"></td>
+          <td><input type="number" min="0" placeholder="Ex: 45"></td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="margin-top: 20px; text-align: right;">
+      <button onclick="aplicarFiltros()" style="padding: 10px 16px; background: #182D46; color: #fff; border: none; border-radius: 8px; cursor: pointer;">Aplicar Filtros</button>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="img/image 39.png" alt="Logo PetLinka">
+      <div class="social-icons">
+        <img src="img/f.svg" alt="Facebook">
+        <img src="img/insta.svg" alt="Instagram">
+        <img src="img/yt.svg" alt="YouTube">
+        <img src="img/line-md_twitter-x.svg" alt="Twitter/X">
+        <img src="img/tiktok.svg" alt="TikTok">
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h4>Políticas</h4>
+      <p>Termos e condição de uso</p>
+      <p>Privacidade</p>
+      <p>Cookies</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>A empresa</h4>
+      <p>Conheça a PetLinka</p>
+      <p>Suporte ao cliente</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contato e localização</h4>
+      <p>Telefone</p>
+      <p>Email</p>
+      <p>Endereço</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function abrirModal() {
+    document.getElementById('modal-filtros').style.display = 'block';
+  }
+
+  function fecharModal() {
+    document.getElementById('modal-filtros').style.display = 'none';
+  }
+
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal-filtros');
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+  function aplicarFiltros() {
+  const banhoPreco = document.querySelectorAll("tbody tr")[0].children[1].querySelector("input").value;
+  const banhoTempo = document.querySelectorAll("tbody tr")[0].children[2].querySelector("input").value;
+  const tosaPreco = document.querySelectorAll("tbody tr")[1].children[1].querySelector("input").value;
+  const tosaTempo = document.querySelectorAll("tbody tr")[1].children[2].querySelector("input").value;
+
+  console.log("Banho até R$", banhoPreco, " | Tempo:", banhoTempo);
+  console.log("Tosa até R$", tosaPreco, " | Tempo:", tosaTempo);
+
+  fecharModal(); 
+}
+
+</script>
+
+</body>
+</html>
+
