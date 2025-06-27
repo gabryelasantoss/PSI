@@ -332,6 +332,14 @@
     });
 
     updateCards();
+    cards.forEach((card, index) => {
+  card.addEventListener('click', () => {
+    if (window.innerWidth <= 768) { // só ativa no mobile
+      current = index;
+      updateCards();
+    }
+  });
+  });
   </script>
 
   <script>
@@ -350,7 +358,6 @@
     }
   }
 </script>
-
 
 </body>
 </html>

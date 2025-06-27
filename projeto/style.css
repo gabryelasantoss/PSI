@@ -333,7 +333,7 @@ main{
 }
 
 
-@media (max-width: 588px) {
+@media (max-width: 768px) {
 
 .logo{
   display: none;
@@ -364,5 +364,32 @@ main{
 #txtBusca {
   width: 100%;
 }
+
+.carousel {
+  flex-direction: column;
+  align-items: stretch;
 }
+
+.card {
+  transform: scale(1) !important;
+  opacity: 1 !important;
+  width: 100%;
+}
+
+.arrow {
+  display: none;
+}
+
+.card:not(.active) {
+  background-color: #f1f1f1;
+  opacity: 0.6 !important;
+}
+.card.active {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+}
+
+
+
 
